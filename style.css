@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  justify-content: center;
+  padding-left: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 100%;
+}
+.text h1 {
+  color: hsl(234, 29%, 20%);
+  font-size: 25px;
+  font-weight: 700;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.left-content {
+  justify-content: center;
+}
+.text p {
+  color: hsl(234, 29%, 20%);
+  margin-bottom: 20px;
+}
+ul {
+  list-style-type: none;
+}
+ul li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: hsl(4, 100%, 67%);
+}
+ul li::after {
+  content: "\2713";
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #ffffff;
+  font-size: 14px;
+}
+label {
+  color: hsl(234, 29%, 20%);
+}
+
+#email {
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  padding: 15px;
+  color: hsl(231, 7%, 60%);
+  border-style: dashed;
+  border: 1px solid;
+}
+#submit {
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  border-style: none;
+  margin-bottom: 20px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 375px) {
+  .whole {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .image {
+    flex: 1;
+    text-align: right;
+    margin-right: 50px;
+  }
+  .left-content {
+    flex: 1;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 375px) {
+}
